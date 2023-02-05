@@ -24,6 +24,7 @@ function App() {
       <Row title="코미디 영화" id="CM" fetchUrl={requests.fetchComedyMovies} />
 
       <Footer />
+      console.log(Banner);
     </div>
   );
   }
@@ -72,3 +73,4 @@ export default App;
 // }
 
 // export default App;
+
