@@ -37,8 +37,8 @@ const Banner = () => {
         const {data}  = await axios.get(`movie/${movieId}`,{
                 params: {append_to_response: "videos"},
             }); 
-        let NotFound = [785084,724495,1015963,980078,987750,846433,842544];
-        
+        let NotFound = [785084,724495,1015963,980078,987750,846433,842544,955991,758009,1035806,1013870];
+        console.log(movieId)
         if(  NotFound.includes(movieId)  ){
             fetchData();
             return;
@@ -134,7 +134,7 @@ const Banner = () => {
             )
             console.log("videos");
         }
-    }else{return(<></>)}
+    }else{return(<> 데이터가 없습니다. </>)}
 }
 
 // iframe
